@@ -11,19 +11,26 @@ package movistel;
  * @author Pipasooo (Felipe Godoy)
  */
 public class Clientes {
+
     private String rut;
+
+    private String nombre;
     private String tipoPlan;
     private int deuda;
-    private boolean cobertura;
+    private String cobertura;
     private int celular;
     private String correo;
     private String region;
+    private String comuna;
     private String direccion;
-    
-    
+    private double oferta;
+
     //Constructor con parametros
-    
-    public Clientes (String rut, String tipoPlan, int deuda, boolean cobertura, int celular, String correo, String region, String direccion){
+    public Clientes() {
+
+    }
+
+    public Clientes(String rut, String tipoPlan, int deuda, String cobertura, int celular, String correo, String region, String comuna, String direccion) {
         this.rut = rut;
         this.tipoPlan = tipoPlan;
         this.deuda = deuda;
@@ -31,41 +38,105 @@ public class Clientes {
         this.celular = celular;
         this.correo = correo;
         this.region = region;
+        this.comuna = comuna;
         this.direccion = direccion;
-        
-    } 
-    
+    }
+
     //Accesadores
-    public String getRut(){
+    public String getRut() {
         return rut;
     }
-    
-    public String getTipoPlan(){
+
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+
+    public String getTipoPlan() {
         return tipoPlan;
     }
-    
-    public int getDeuda(){
+
+    public void setTipoPlan(String tipoPlan) {
+        this.tipoPlan = tipoPlan;
+    }
+
+    public int getDeuda() {
         return deuda;
     }
-    
-    public boolean getCobertura(){
+
+    //Sobrecarga de métodos
+    public void setDeuda(double deuda) {
+        this.deuda = (int) deuda;
+    }
+
+    public void setDeuda(int deuda) {
+        this.deuda = deuda;
+    }
+
+    public String getCobertura() {
         return cobertura;
     }
-    
-    public int getCelular(){
+
+    public void setCobertura(String cobertura) {
+        this.cobertura = cobertura;
+    }
+
+    public int getCelular() {
         return celular;
     }
-    
-    public String getCorreo(){
+
+    public void setCelular(int celular) {
+        this.celular = celular;
+    }
+
+    public String getCorreo() {
         return correo;
     }
-    
-    public String getRegion(){
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getRegion() {
         return region;
     }
-    
-    public String getDireccion(){
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getComuna() {
+        return comuna;
+    }
+
+    public void setComuna(String comuna) {
+        this.comuna = comuna;
+    }
+
+    public String getDireccion() {
         return direccion;
     }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getOferta() {
+        return oferta;
+    }
+
+    public void setOferta(double oferta) {
+        this.oferta = oferta;
+    }
     
+     public void setOferta(int oferta) {
+        this.oferta = oferta;
+    }
 }

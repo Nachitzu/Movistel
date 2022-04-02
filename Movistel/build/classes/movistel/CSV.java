@@ -8,7 +8,7 @@ import java.util.*;
 import java.io.*;
 /**
  *
- * @author Leo 
+ * @author Nacho
  */
 public class CSV {
     //Variables de instancia

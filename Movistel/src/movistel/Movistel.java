@@ -4,6 +4,10 @@
  */
 package movistel;
 
+import java.io.IOException;
+import java.util.*;
+
+
 /**
  * @author Nachitzu (Ignacio Núñez)
  * @author Idolatrine (Marcelo Galvez) 
@@ -13,13 +17,28 @@ public class Movistel {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        int n = 1;
+        ArrayList<Regiones> rChile = new ArrayList();
+        Ops operacion = new Ops();
+        operacion.fillCollection(rChile);   
+        System.out.println("Numero region y Nombre region");
+        for(int k=0;k<rChile.size();k++){
+         operacion.fillCollection((rChile.get(k)).getClientes(), (rChile.get(k)).getNombre());
+         if(k==4){
+          System.out.println((rChile.get(k)).getClientes().get("21.037.880-4").getCorreo());
+         }
+         
+         System.out.print((rChile.get(k)).getNumero());
+         System.out.println(" " + (rChile.get(k)).getNombre());
+        }
         
-        PlanA objPlanA = new PlanA();
-        System.out.println("Precio del plan A es " + objPlanA.getPrecioA() );
-        PlanB objPlanB = new PlanB();
-        System.out.println("Precio del plan B es " + objPlanB.getPrecioB() );
+        
+        Plan objPlan = new Plan(1);
+        System.out.println("Precio del plan A es " + objPlan.getPrecioPlan());
+
     }
     
 }
