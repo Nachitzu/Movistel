@@ -1,5 +1,5 @@
-﻿rut,tipoPlan,deuda,cobertura,celular,correo,region,comuna,direccion
-21.037.880-4,1,1500,Si,91041113,metalgearx0@gmail.com,V Región de Valparaíso,Viña del Mar,4 Norte 556
-19.189.445-5,2,0,No,94456321,correogenerico1@gmail.com,Región Metropolitana de Santiago,Santiago,Huerfanos 1555
-15.950.100-0,4,0,Si,95632204,correogenerico2@gmail.com,I Región de Tarapacá,Iquique,Calle Iquique 36
-16.630.782-K,2,0,Si,94877414,correogenerico3@gmail.com,IV Región de Coquimbo,Elqui,Elqui street 53
+rut,nombre,tipoPlan,deuda,cobertura,celular,correo,region,comuna,direccion
+21.037.880-4,Marcelo Galvez,1,1500,Si,91041113,metalgearx0@gmail.com,V Región de Valparaíso,Viña del Mar,4 Norte 556
+19.189.445-5,Nombre2,2,0,No,94456321,correogenerico1@gmail.com,Región Metropolitana de Santiago,Santiago,Huerfanos 1555
+15.950.100-0,Nombre3,4,0,Si,95632204,correogenerico2@gmail.com,I Región de Tarapacá,Iquique,Calle Iquique 36
+16.630.782-K,Nombre4,2,0,Si,94877414,correogenerico3@gmail.com,IV Región de Coquimbo,Elqui,Elqui street 53
