@@ -4,7 +4,9 @@
  */
 package movistel;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 
@@ -20,25 +22,10 @@ public class Movistel {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
-        int n = 1;
-        ArrayList<Regiones> rChile = new ArrayList();
-        Ops operacion = new Ops();
-        operacion.fillCollection(rChile);   
-        System.out.println("Numero region y Nombre region");
-        for(int k=0;k<rChile.size();k++){
-         operacion.fillCollection((rChile.get(k)).getClientes(), (rChile.get(k)).getNombre());
-         if(k==4){
-          System.out.println((rChile.get(k)).getClientes().get("21.037.880-4").getCorreo());
-         }
-         
-         System.out.print((rChile.get(k)).getNumero());
-         System.out.println(" " + (rChile.get(k)).getNombre());
-        }
+        Menu menu = new Menu();
+       
         
-        
-        Plan objPlan = new Plan(1);
-        System.out.println("Precio del plan A es " + objPlan.getPrecioPlan());
-
+        menu.menuAplicacion();
     }
-    
+        
 }
